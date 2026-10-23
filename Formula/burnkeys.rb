@@ -1,0 +1,18 @@
+class Burnkeys < Formula
+  desc "Find, check and rotate API keys across your projects without printing them"
+  homepage "https://burnkeys.com"
+  url "https://burnkeys.com/download/burnkeys-cli-0.2.0.tar.gz"
+  sha256 "e17869d05eee84f04b89e8e1ab8c6de25e277278c3414136b775d23d19a6b062"
+  license "Apache-2.0"
+
+  depends_on "node"
+
+  def install
+    libexec.install Dir["*"]
+    (bin/"burnkeys").write_env_script libexec/"bin/burnkeys.js", PATH: "#{Formula["node"].opt_bin}:$PATH"
+  end
+
+  test do
+    assert_match "burnkeys", shell_output("#{bin}/burnkeys help")
+  end
+end
