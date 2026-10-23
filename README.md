@@ -12,7 +12,7 @@
 brew install claudewebsites/burnkeys/burnkeys
 ```
 
-Needs [Homebrew](https://brew.sh). Works on macOS and Linux.
+Needs [Homebrew](https://brew.sh) on macOS.
 
 ## Use
 
