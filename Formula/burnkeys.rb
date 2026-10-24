@@ -1,8 +1,8 @@
 class Burnkeys < Formula
   desc "Find, check and rotate API keys across your projects without printing them"
   homepage "https://burnkeys.com"
-  url "https://burnkeys.com/download/burnkeys-cli-0.3.0.tar.gz"
-  sha256 "8784d72cafb3b3b80a104c2b65525c0799800481e96fafd762dc6d829bf06505"
+  url "https://burnkeys.com/download/burnkeys-cli-0.3.1.tar.gz"
+  sha256 "6dc13c9a816b0da0ddd5132f53d59ddb9ccb525e416d17b03ddf4d1f5566bfc4"
   license "Apache-2.0"
 
   depends_on "node"
